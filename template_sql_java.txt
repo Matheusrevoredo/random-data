@@ -1,0 +1,45 @@
+    import java.sql.*;  
+    class MysqlCon{  
+    public static void main(String args[]){  
+    try{  
+    Class.forName("com.mysql.jdbc.Driver");  
+    Connection con=DriverManager.getConnection(  
+    "jdbc:mysql://localhost:3306/sonoo","root","root");  
+    //here sonoo is database name, root is username and password  
+    Statement stmt=con.createStatement();  
+    ResultSet rs=stmt.executeQuery("select * from emp");  
+    while(rs.next())  
+    System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+    con.close();  
+    }catch(Exception e){ System.out.println(e);}  
+    }  
+    }  
+	
+	public static void viewTable(Connection con, String dbName)
+    throws SQLException {
+
+    Statement stmt = null;
+    String query =
+        "select COF_NAME, SUP_ID, PRICE, " +
+        "SALES, TOTAL " +
+        "from " + dbName + ".COFFEES";
+
+    try {
+        stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(query);
+        while (rs.next()) {
+            String coffeeName = rs.getString("COF_NAME");
+            int supplierID = rs.getInt("SUP_ID");
+            float price = rs.getFloat("PRICE");
+            int sales = rs.getInt("SALES");
+            int total = rs.getInt("TOTAL");
+            System.out.println(coffeeName + "\t" + supplierID +
+                               "\t" + price + "\t" + sales +
+                               "\t" + total);
+        }
+    } catch (SQLException e ) {
+        JDBCTutorialUtilities.printSQLException(e);
+    } finally {
+        if (stmt != null) { stmt.close(); }
+    }
+}

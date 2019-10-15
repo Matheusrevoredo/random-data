@@ -1,0 +1,34 @@
+  <connection>
+    <name>PJE_2GRAU</name>
+    <server>10.21.204.236</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>pje_hml_2grau</database>
+    <port>5432</port>
+    <username>pje</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb29a455dda1a5ee</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>INITIAL_POOL_SIZE</code><attribute>2</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MAXIMUM_POOL_SIZE</code><attribute>30</attribute></attribute>
+      <attribute><code>POOLING_maxActive</code><attribute>20</attribute></attribute>
+      <attribute><code>POOLING_maxIdle</code><attribute>10</attribute></attribute>
+      <attribute><code>POOLING_testOnBorrow</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_testOnReturn</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_testWhileIdle</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_validationQuery</code><attribute>select 1</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PREFERRED_SCHEMA_NAME</code><attribute>pje_eg</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SQL_CONNECT</code><attribute>SET SEARCH_PATH=pje, pje_eg, pje_jbpm, pje_adm, pje_jt, pje_stage, public</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>Y</attribute></attribute>
+    </attributes>
+  </connection>

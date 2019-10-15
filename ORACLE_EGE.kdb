@@ -1,0 +1,33 @@
+  <connection>
+    <name>ORACLE_EGE</name>
+    <server/>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = bd-ora-hml.trt21.local)(PORT = 1523)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = natalhom)))</database>
+    <port>-1</port>
+    <username>EGE_USUARIO_ETL</username>
+    <password>Encrypted 2be98afc81ad08797be18bc79d197bbd6</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>INITIAL_POOL_SIZE</code><attribute>2</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MAXIMUM_POOL_SIZE</code><attribute>30</attribute></attribute>
+      <attribute><code>POOLING_maxActive</code><attribute>20</attribute></attribute>
+      <attribute><code>POOLING_maxIdle</code><attribute>10</attribute></attribute>
+      <attribute><code>POOLING_testOnBorrow</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_testOnReturn</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_testWhileIdle</code><attribute>true</attribute></attribute>
+      <attribute><code>POOLING_validationQuery</code><attribute>select 1 from dual</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>-1</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STRICT_NUMBER_38_INTERPRETATION</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>Y</attribute></attribute>
+    </attributes>
+  </connection>
